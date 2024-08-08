@@ -1454,6 +1454,8 @@ class VmsModule(BaseModule):
             )
             if templates:
                 template = templates[0]
+                if self.param('clone'):
+                    return template
                 if self.param('template') is not None and self.param('template') != template.name:
                     raise ValueError("You can not change template of the Virtual Machine.")
 
