@@ -281,6 +281,7 @@ class QosModule(BaseModule):
             max_read_throughput=self.param('read_throughput'),
             max_throughput=self.param('max_throughput'),
             max_write_iops=self.param('write_iops'),
+            max_write_throughput=self.param('write_throughput'),
             cpu_limit=self.param('cpu_limit'),
             inbound_average=self.param('inbound_average'),
             inbound_peak=self.param('inbound_peak'),
