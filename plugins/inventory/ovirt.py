@@ -87,8 +87,6 @@ import sys
 from ansible.plugins.inventory import BaseInventoryPlugin, Constructable, Cacheable
 from ansible.errors import AnsibleError, AnsibleParserError
 
-HAS_OVIRT_LIB = False
-
 try:
     import ovirtsdk4 as sdk
     HAS_OVIRT_LIB = True
